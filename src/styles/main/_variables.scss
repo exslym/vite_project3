@@ -1,0 +1,62 @@
+/* fonts */
+$font-commissioner: 'Commissioner', Arial, Helvetica, sans-serif;
+$font-calibri: 'Calibri', Arial, Helvetica, sans-serif;
+$font-inner: 'Inter Tight', Arial, Helvetica, sans-serif;
+
+/* colors */
+$clr-default: #f5f5f5;
+/* ================ */
+$clr-gray: #f2f2f2;
+$clr-white: #ffffff;
+$clr-orange: #e6775a;
+$clr-black: #24201e;
+$clr-dark: #484443;
+$clr-border: #e29a7c;
+$clr-discl: #aaaaaa;
+
+/* desktop scrollbar width */
+$scrollbar: 15px;
+
+/* gradients */
+$grad-orange: linear-gradient(269.47deg, #e4c0b1 0.78%, #e6775a 99.12%);
+$grad-text: linear-gradient(95.93deg, #24201e 0%, #95807a 68.23%, #95807a 100%);
+$grad-sup: linear-gradient(95.93deg, #3a3230 0%, #95807a 100%);
+
+/* color-hover */
+$clr-orange-hover: rgb(245, 143, 103);
+
+/* font-sizes */
+.fs84 {
+	@include adapt(font-size, 52, 84);
+}
+.fs46 {
+	@include adapt(font-size, 32, 46);
+}
+.fs30 {
+	@include adapt(font-size, 20, 30);
+}
+.fs24 {
+	@include adapt(font-size, 16, 24);
+}
+.fs20 {
+	@include adapt(font-size, 16, 20);
+}
+.fs18 {
+	@include adapt(font-size, 14, 18);
+}
+.fs16 {
+	@include adapt(font-size, 13, 16);
+}
+.fs14 {
+	@include adapt(font-size, 12, 14);
+}
+
+.commissioner {
+	font-family: $font-commissioner;
+}
+.calibri {
+	font-family: $font-calibri;
+}
+.inner {
+	font-family: $font-inner;
+}
