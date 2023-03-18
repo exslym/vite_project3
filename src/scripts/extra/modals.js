@@ -1,48 +1,48 @@
 export function modals(modalBlock, openButton, closeButton) {
-	if (document.querySelector(`${openButton}`)) {
-		const modals = document.querySelectorAll(`${modalBlock}`);
-		const openModalButtons = document.querySelectorAll(`${openButton}`);
-		const closeModalButtons = document.querySelectorAll(`${closeButton}`);
+  if (document.querySelector(`${openButton}`)) {
+    const modals = document.querySelectorAll(`${modalBlock}`);
+    const openModalButtons = document.querySelectorAll(`${openButton}`);
+    const closeModalButtons = document.querySelectorAll(`${closeButton}`);
 
-		openModalButtons.forEach(button => {
-			button.addEventListener('click', () => {
-				document.querySelector('html').classList.add('noScroll');
-				document.querySelector(`#${button.dataset.label}`).showModal();
-				document.querySelector(`#${button.dataset.label}`).scrollTop = 0;
-			});
-		});
-		closeModalButtons.forEach(button => {
-			button.addEventListener('click', e => {
-				let openedModal = document.querySelector(`#${button.dataset.label}`);
-				document.querySelector('html').classList.remove('noScroll');
-				openedModal.setAttribute('closing', '');
-				openedModal.addEventListener(
-					'animationend',
-					() => {
-						openedModal.removeAttribute('closing');
-						openedModal.close();
-					},
-					{ once: true }
-				);
-			});
-		});
-		modals.forEach(modal => {
-			modal.addEventListener('click', function (e) {
-				if (e.target.nodeName === 'DIALOG') {
-					document.querySelector('html').classList.remove('noScroll');
-					this.setAttribute('closing', '');
-					this.addEventListener(
-						'animationend',
-						() => {
-							this.removeAttribute('closing');
-							this.close();
-						},
-						{ once: true }
-					);
-				}
-			});
-		});
-	}
+    openModalButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        document.querySelector('html').classList.add('noScroll');
+        document.querySelector(`#${button.dataset.label}`).showModal();
+        document.querySelector(`#${button.dataset.label}`).scrollTop = 0;
+      });
+    });
+    closeModalButtons.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        let openedModal = document.querySelector(`#${button.dataset.label}`);
+        document.querySelector('html').classList.remove('noScroll');
+        openedModal.setAttribute('closing', '');
+        openedModal.addEventListener(
+          'animationend',
+          () => {
+            openedModal.removeAttribute('closing');
+            openedModal.close();
+          },
+          { once: true },
+        );
+      });
+    });
+    modals.forEach((modal) => {
+      modal.addEventListener('click', function (e) {
+        if (e.target.nodeName === 'DIALOG') {
+          document.querySelector('html').classList.remove('noScroll');
+          this.setAttribute('closing', '');
+          this.addEventListener(
+            'animationend',
+            () => {
+              this.removeAttribute('closing');
+              this.close();
+            },
+            { once: true },
+          );
+        }
+      });
+    });
+  }
 }
 
 //! html structure - copy template to your document:

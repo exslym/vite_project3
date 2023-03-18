@@ -5,14 +5,14 @@ import { popup } from './extra/popup';
 import { smoothShowBlock } from './extra/showBlock';
 
 window.addEventListener('DOMContentLoaded', () => {
-	'use strict';
+  'use strict';
 
-	/* SHOW/HIDE BLOCK */
-	smoothShowBlock('openButton', 'openBlock', '_active');
+  /* SHOW/HIDE BLOCK */
+  smoothShowBlock('openButton', 'openBlock', '_active');
 
-	/* ZOOM for PLUS buttons on mobile devices */
-	popup('popup');
+  /* ZOOM for PLUS buttons on mobile devices */
+  popup('popup');
 
-	/*  ANIMATIONS */
-	elementAnimation('appearingBlock', '_animated2');
+  /*  ANIMATIONS */
+  elementAnimation('appearingBlock', '_animated2');
 });
