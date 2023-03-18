@@ -7,8 +7,7 @@
 	"scripts": {
 		"start": "vite --open",
 		"build": "cross-env BUILD_TYPE=dev vite build",
-		"serve": "vite preview --port 3001",
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"serve": "vite preview --port 3001 --open",
 		"deploy": "gh-pages -d build"
 	},
 	"keywords": [],

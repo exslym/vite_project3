@@ -65,11 +65,13 @@ pages.forEach(page => {
 	pagesInput[page.name] = page.path;
 });
 
+const SITE_URL = process.env.ASSET_URL || '';
+const ASSET_URL = process.env.ASSET_URL || './';
+
 export default defineConfig({
-	sourcemap: true,
 	root: Path.resolve(__dirname, './src'),
-	// site: 'https://exslym.github.io',
-	// base: '/vite_project3',
+	// site: `${SITE_URL}`,
+	// base: `${ASSET_URL}`,
 	base: './',
 	publicDir: '../public',
 	css: {
