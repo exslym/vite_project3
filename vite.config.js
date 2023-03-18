@@ -65,13 +65,8 @@ pages.forEach(page => {
 	pagesInput[page.name] = page.path;
 });
 
-const SITE_URL = process.env.ASSET_URL || '';
-const ASSET_URL = process.env.ASSET_URL || './';
-
 export default defineConfig({
 	root: Path.resolve(__dirname, './src'),
-	// site: `${SITE_URL}`,
-	// base: `${ASSET_URL}`,
 	base: './',
 	publicDir: '../public',
 	css: {
