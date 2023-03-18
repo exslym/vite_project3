@@ -4,13 +4,43 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="shortcut icon" href="#" />
+		<link rel="shortcut icon" href="./assets/favicon.png" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<!-- <link rel="stylesheet" href="fonts/Calibri/stylesheet.css" />
-		<link rel="stylesheet" href="fonts/CommissionerThin/stylesheet.css" /> -->
-		<title>Floace_Mono</title>
+		<!-- PROJECT_NAME for Google Analytics - the same for all pages: -->
+		<meta name="projectName" content="Floace_Mono" />
+		<!-- PAGE_TITLE for Google Analytics - variable for each page: -->
+		<title data-title="pageTitle">Floace_Mono</title>
+
 		<script src="./scripts/index.js" type="module"></script>
+
+		<script src="tools/jquery-3.6.3.min.js"></script>
+		<script src="tools/magnific-popup.min.js"></script>
+		<script src="tools/scroll-tracker.min.js"></script>
+
+		<!-- Google Analytics (GA) -->
+		<script type="text/javascript">
+			const pageTitle = `${document.querySelector('[data-title="pageTitle"]').textContent}`;
+			const projectName = `${document.querySelector('meta[name="projectName"]').content}`;
+		</script>
+
+		<!-- Scroll Tracker (GA) -->
+		<script type="text/javascript">
+			window.addEventListener('load', function (event) {
+				let tracker = window.ScrollTracker({
+					context: document.querySelector('.wrapper'),
+				});
+				tracker.on({ percentages: { every: [10] } }, e => {
+					console.log(
+						`${projectName}.send`,
+						`event`,
+						`scroll`,
+						`${e.data.label}`,
+						`${pageTitle} scrolled`,
+					); //ga
+				});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -18,7 +48,7 @@
 			<section class="section _1" id="slide_1">
 				<div class="section__content">
 					<div class="intro">
-						<img src="images/logo.svg" alt="logo" class="intro__logo" />
+						<img src="./assets/images/logo.svg" alt="logo" class="intro__logo" />
 						<div class="intro__flex flexFSSB">
 							<div class="intro__flex_text appearingBlock" style="--i: 1">
 								<h1>Современные глюкокортико-стероиды</h1>
@@ -27,7 +57,7 @@
 								</div>
 							</div>
 							<img
-								src="images/balerine.png"
+								src="./assets/images/balerine.png"
 								alt="balerine"
 								class="intro__flex_picture appearingBlock"
 								style="--i: 3"
@@ -57,20 +87,20 @@
 									</h4>
 									<ul class="presentation__box_list list1">
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p>
 												<strong>способствует</strong> выраженному противовоспалительному действию
 											</p>
 										</li>
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p>
 												<strong>обладает</strong> меньшим риском офтальмогипертензии
 												по&nbsp;сравнению, например, с&nbsp;дексаметазоном
 											</p>
 										</li>
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p>
 												<strong>помогает</strong> улучшению состояния глазной поверхности
 												при&nbsp;лечении и&nbsp;профилактике синдрома
@@ -78,18 +108,18 @@
 											</p>
 										</li>
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p><strong>имеет</strong> обширную международную доказательную базу</p>
 										</li>
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p><strong>разрешён</strong> у&nbsp;детей с&nbsp;2&nbsp;лет</p>
 										</li>
 									</ul>
 								</div>
 							</div>
 							<div class="presentation__box_packbox">
-								<img src="images/pack1.png" alt="pack" />
+								<img src="./assets/images/pack1.png" alt="pack" />
 								<a
 									href="#treatment"
 									class="presentation__box_button button popup"
@@ -112,31 +142,31 @@
 						</h4>
 						<ul class="usage__list list1">
 							<li>
-								<img src="images/icon_bullet.svg" alt="bullet" />
+								<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 								<p>при аллергических и&nbsp;бактериальных конъюнктивитах</p>
 							</li>
 							<li>
-								<img src="images/icon_bullet.svg" alt="bullet" />
+								<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 								<p>увеитах</p>
 							</li>
 							<li>
-								<img src="images/icon_bullet.svg" alt="bullet" />
+								<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 								<p>блефаритах</p>
 							</li>
 							<li>
-								<img src="images/icon_bullet.svg" alt="bullet" />
+								<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 								<p>кератитах</p>
 							</li>
 							<li>
-								<img src="images/icon_bullet.svg" alt="bullet" />
+								<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 								<p>травмах глаза и&nbsp;оперативных вмешательствах</p>
 							</li>
 							<li>
-								<img src="images/icon_bullet.svg" alt="bullet" />
+								<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 								<p>конъюнктивитах при синдроме &laquo;Сухого&nbsp;глаза&raquo;</p>
 							</li>
 							<li>
-								<img src="images/icon_bullet.svg" alt="bullet" />
+								<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 								<p>
 									поражениях переднего сегмента глаза при коронавирусной инфекции
 									(COVID&#8209;19)&nbsp;&mdash; кератоконъюнктивите, иридоциклите, конъюнктивите
@@ -149,7 +179,7 @@
 										применения&nbsp;&mdash;
 										<strong> фторметолона ацетат (глазные капли Флоас Моно)<sup>1</sup> </strong>
 									</p>
-									<img src="images/pack2.png" alt="pack" />
+									<img src="./assets/images/pack2.png" alt="pack" />
 								</div>
 							</li>
 						</ul>
@@ -163,7 +193,11 @@
 						<h3>Химическая формула фторметолона определяет его уникальные свойства<sup>12</sup></h3>
 						<div class="formula__grid">
 							<div class="item item1">
-								<img class="formula__grid_picture" src="images/formula.svg" alt="formula" />
+								<img
+									class="formula__grid_picture"
+									src="./assets/images/formula.svg"
+									alt="formula"
+								/>
 							</div>
 							<div class="item item2 box-border">
 								<p class="title">
@@ -172,14 +206,14 @@
 								</p>
 								<ul class="list list1">
 									<li>
-										<img src="images/icon_bullet.svg" alt="bullet" />
+										<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 										<p>
 											меньшей склонности к&nbsp;повышению ВГД по&nbsp;сравнению
 											с&nbsp;дексаметазоном
 										</p>
 									</li>
 									<li>
-										<img src="images/icon_bullet.svg" alt="bullet" />
+										<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 										<p>увеличению экспрессии муцинов эпителия роговицы и&nbsp;конъюнктивы</p>
 									</li>
 								</ul>
@@ -239,7 +273,7 @@
 						<div class="researchs__graphbox flexFESB">
 							<div class="researchs__graphbox_graph">
 								<p class="text">Оценка степени конъюнктивальной инъекции<sup>3</sup></p>
-								<img src="images/graph1.svg" alt="" class="graph" />
+								<img src="./assets/images/graph1.svg" alt="" class="graph" />
 								<div class="button_zoom">
 									<a href="#graph1" class="button_plus popup" onclick="event.stopPropagation()">
 										<p>+ приблизить</p>
@@ -250,7 +284,7 @@
 								<p class="text">
 									Оценка уровня боли по&nbsp;ВАШ (визуальная аналоговая шкала)<sup>3</sup>
 								</p>
-								<img src="images/graph2.svg" alt="" class="graph" />
+								<img src="./assets/images/graph2.svg" alt="" class="graph" />
 								<div class="button_zoom">
 									<a href="#graph2" class="button_plus popup" onclick="event.stopPropagation()">
 										<p>+ приблизить</p>
@@ -266,21 +300,21 @@
 							</h4>
 							<ul class="researchs__list list2 flexSSB">
 								<li>
-									<img src="images/icon_bullet.svg" alt="bullet" />
+									<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 									<p>
 										<strong>глюкокортикостероидов,</strong>
 										например Флоас Моно (фторметолон)
 									</p>
 								</li>
 								<li>
-									<img src="images/icon_bullet.svg" alt="bullet" />
+									<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 									<p>
 										<strong>антибиотиков,</strong>
 										например Сигницеф&reg; (левофлоксацин)
 									</p>
 								</li>
 								<li>
-									<img src="images/icon_bullet.svg" alt="bullet" />
+									<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 									<p>
 										<strong> нестероидных противовоспалительных препаратов, </strong>
 										например Броксинак&reg; (бромфенак&nbsp;0,09%)
@@ -298,7 +332,7 @@
 									onclick="console.log(`click ${dataset.label}`); "
 								>
 									<p>Профиль безопасности фторметолона</p>
-									<img src="images/icon_arrow.svg" class="arrow" alt="arrow" />
+									<img src="./assets/images/icon_arrow.svg" class="arrow" alt="arrow" />
 								</button>
 								<button
 									class="button openButton"
@@ -307,7 +341,7 @@
 									onclick="console.log(`click ${dataset.label}`); "
 								>
 									<p>Экспрессия муцинов</p>
-									<img src="images/icon_arrow.svg" class="arrow" alt="arrow" />
+									<img src="./assets/images/icon_arrow.svg" class="arrow" alt="arrow" />
 								</button>
 							</div>
 						</div>
@@ -337,7 +371,7 @@
 									Статистически значимая разница между воздействием дексаметазона
 									и&nbsp;фторметолона для местного применения у&nbsp;пациентов с&nbsp;глаукомой
 								</p>
-								<img src="images/graph3.svg" alt="" class="graph" />
+								<img src="./assets/images/graph3.svg" alt="" class="graph" />
 								<div class="button_zoom">
 									<a href="#graph3" class="button_plus popup" onclick="event.stopPropagation()">
 										<p>+ приблизить</p>
@@ -355,16 +389,16 @@
 									</p>
 									<ul class="list list1">
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p>оказывает меньший иммуносупрессивный эффект</p>
 										</li>
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p>меньше влияет на&nbsp;уровень&nbsp;ВГД</p>
 										</li>
 									</ul>
 								</div>
-								<img src="images/pack1.png" alt="pack" class="results__flex_pack" />
+								<img src="./assets/images/pack1.png" alt="pack" class="results__flex_pack" />
 							</div>
 						</div>
 					</div>
@@ -398,7 +432,7 @@
 						<div class="results__flex flexFSSB">
 							<div class="results__flex_item">
 								<p class="text">MUC1</p>
-								<img src="images/graph4.svg" alt="graph" class="graph" />
+								<img src="./assets/images/graph4.svg" alt="graph" class="graph" />
 								<div class="button_zoom">
 									<a href="#graph4" class="button_plus popup" onclick="event.stopPropagation()">
 										<p>+ приблизить</p>
@@ -414,7 +448,7 @@
 							</div>
 							<div class="results__flex_item">
 								<p class="text">MUC4</p>
-								<img src="images/graph5.svg" alt="graph" class="graph" />
+								<img src="./assets/images/graph5.svg" alt="graph" class="graph" />
 								<div class="button_zoom">
 									<a href="#graph5" class="button_plus popup" onclick="event.stopPropagation()">
 										<p>+ приблизить</p>
@@ -432,7 +466,7 @@
 						<div class="results__flex results__flex-last flexFSSB">
 							<div class="results__flex_item">
 								<p class="text">MUC16</p>
-								<img src="images/graph6.svg" alt="graph" class="graph" />
+								<img src="./assets/images/graph6.svg" alt="graph" class="graph" />
 								<div class="button_zoom">
 									<a href="#graph6" class="button_plus popup" onclick="event.stopPropagation()">
 										<p>+ приблизить</p>
@@ -441,7 +475,7 @@
 							</div>
 							<div class="results__flex_item">
 								<p class="text">MUC19</p>
-								<img src="images/graph7.svg" alt="graph" class="graph" />
+								<img src="./assets/images/graph7.svg" alt="graph" class="graph" />
 								<div class="button_zoom">
 									<a href="#graph7" class="button_plus popup" onclick="event.stopPropagation()">
 										<p>+ приблизить</p>
@@ -485,7 +519,7 @@
 							<i>Изменение показателей ССГ</i>
 							согласно критериям оценки по&nbsp;балльной шкале
 						</h4>
-						<img src="images/graph8.svg" alt="graph" class="graph" />
+						<img src="./assets/images/graph8.svg" alt="graph" class="graph" />
 						<div class="button_zoom">
 							<a href="#graph8" class="button_plus popup" onclick="event.stopPropagation()">
 								<p>+ приблизить</p>
@@ -528,20 +562,20 @@
 									</h4>
 									<ul class="presentation__box_list list1">
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p>
 												<strong>способствует</strong> выраженному противовоспалительному действию
 											</p>
 										</li>
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p>
 												<strong>обладает</strong> меньшим риском офтальмогипертензии
 												по&nbsp;сравнению, например, с&nbsp;дексаметазоном
 											</p>
 										</li>
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p>
 												<strong>помогает</strong> улучшению состояния глазной поверхности
 												при&nbsp;лечении и&nbsp;профилактике синдрома
@@ -549,18 +583,18 @@
 											</p>
 										</li>
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p><strong>имеет</strong> обширную международную доказательную базу</p>
 										</li>
 										<li>
-											<img src="images/icon_bullet.svg" alt="bullet" />
+											<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 											<p><strong>разрешён</strong> у&nbsp;детей с&nbsp;2&nbsp;лет</p>
 										</li>
 									</ul>
 								</div>
 							</div>
 							<div class="presentation__box_packbox">
-								<img src="images/pack1.png" alt="pack" />
+								<img src="./assets/images/pack1.png" alt="pack" />
 								<a
 									href="#treatment"
 									class="presentation__box_button button popup"
@@ -601,7 +635,7 @@
 									</p>
 									<div class="footer__logobox flexFS">
 										<div class="logo">
-											<img src="images/logo_sentiss.svg" alt="logo" />
+											<img src="./assets/images/logo_sentiss.svg" alt="logo" />
 											<p>www.sentiss.ru</p>
 										</div>
 										<div class="footer__contacts">
@@ -747,15 +781,15 @@
 							<h4>Лечение воспалительных заболеваний<sup>9</sup>:</h4>
 							<ul class="treatment__list list1">
 								<li>
-									<img src="images/icon_bullet.svg" alt="bullet" />
+									<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 									<p>конъюнктивы</p>
 								</li>
 								<li>
-									<img src="images/icon_bullet.svg" alt="bullet" />
+									<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 									<p>роговицы</p>
 								</li>
 								<li>
-									<img src="images/icon_bullet.svg" alt="bullet" />
+									<img src="./assets/images/icon_bullet.svg" alt="bullet" />
 									<p>
 										переднего отрезка глаза (в&nbsp;том числе аллергические конъюнктивиты,
 										оперативные вмешательства, синдром &laquo;Сухого&nbsp;глаза&raquo;)
@@ -767,48 +801,45 @@
 				</div>
 				<div id="graph1">
 					<div class="mob-scroll">
-						<img src="images/graph1.svg" alt="graph" />
+						<img src="./assets/images/graph1.svg" alt="graph" />
 					</div>
 				</div>
 				<div id="graph2">
 					<div class="mob-scroll">
-						<img src="images/graph2.svg" alt="graph" />
+						<img src="./assets/images/graph2.svg" alt="graph" />
 					</div>
 				</div>
 				<div id="graph3">
 					<div class="mob-scroll">
-						<img src="images/graph3.svg" alt="graph" />
+						<img src="./assets/images/graph3.svg" alt="graph" />
 					</div>
 				</div>
 				<div id="graph4">
 					<div class="mob-scroll">
-						<img src="images/graph4.svg" alt="graph" />
+						<img src="./assets/images/graph4.svg" alt="graph" />
 					</div>
 				</div>
 				<div id="graph5">
 					<div class="mob-scroll">
-						<img src="images/graph5.svg" alt="graph" />
+						<img src="./assets/images/graph5.svg" alt="graph" />
 					</div>
 				</div>
 				<div id="graph6">
 					<div class="mob-scroll">
-						<img src="images/graph6.svg" alt="graph" />
+						<img src="./assets/images/graph6.svg" alt="graph" />
 					</div>
 				</div>
 				<div id="graph7">
 					<div class="mob-scroll">
-						<img src="images/graph7.svg" alt="graph" />
+						<img src="./assets/images/graph7.svg" alt="graph" />
 					</div>
 				</div>
 				<div id="graph8">
 					<div class="mob-scroll">
-						<img src="images/graph8.svg" alt="graph" />
+						<img src="./assets/images/graph8.svg" alt="graph" />
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<script src="tools/jquery-3.6.0.min.js"></script>
-		<script src="tools/magnific-popup.min.js"></script>
 	</body>
 </html>

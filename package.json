@@ -1,5 +1,5 @@
 {
-	"name": "vite_project1",
+	"name": "vite_project3",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -7,21 +7,27 @@
 	"scripts": {
 		"start": "vite --open",
 		"build": "cross-env BUILD_TYPE=dev vite build",
-		"serve": "vite preview --port 3000",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"serve": "vite preview --port 3001",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"deploy": "gh-pages -d build"
 	},
 	"keywords": [],
 	"browserslist": [
 		"cover 99.5%"
 	],
-	"author": "",
+	"author": "exslym",
 	"license": "ISC",
 	"devDependencies": {
 		"@vitejs/plugin-legacy": "^4.0.1",
 		"autoprefixer": "^10.4.13",
 		"cross-env": "^7.0.3",
+		"gh-pages": "^5.0.0",
+		"postcss": "^8.4.21",
 		"sass": "^1.58.3",
+		"sharp": "^0.31.3",
+		"svgo": "^3.0.2",
 		"vite": "^4.1.0",
-		"vite-aliases": "^0.10.0"
+		"vite-aliases": "^0.10.0",
+		"vite-plugin-image-optimizer": "^1.1.2"
 	}
 }

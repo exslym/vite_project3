@@ -1,5 +1,3 @@
-// import '../assets/tools/jquery-3.6.0.min.js';
-// import '../assets/tools/magnific-popup.min.js';
 import '../styles/index.scss';
 
 import { elementAnimation } from './extra/animations';

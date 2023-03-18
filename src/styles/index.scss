@@ -1,8 +1,9 @@
-@import url('../../public/tools/normalize.min.css');
-@import url('../../public/tools/magnific-popup.css');
+@import url('../assets/tools/normalize.min.css');
+@import url('../assets/tools/magnific-popup.css');
 
-@import url('../../public/fonts/Calibri/stylesheet.css');
-@import url('../../public/fonts/CommissionerThin/stylesheet.css');
+@import url('../assets/fonts/Calibri/stylesheet.css');
+@import url('../assets/fonts/CommissionerThin/stylesheet.css');
+
 /* @import url('https://fonts.googleapis.com/css?family=Commissioner:100,200,300,regular,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap');
  */
@@ -10,4 +11,4 @@
 @import './main/animations';
 @import './main/variables';
 @import './main/defaults';
-@import './main/main';
+@import './main';
