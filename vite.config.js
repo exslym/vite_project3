@@ -66,11 +66,15 @@ pages.forEach(page => {
 });
 
 export default defineConfig({
+	sourcemap: true,
 	root: Path.resolve(__dirname, './src'),
 	// site: 'https://exslym.github.io',
 	// base: '/vite_project3',
 	base: './',
 	publicDir: '../public',
+	css: {
+		devSourcemap: true,
+	},
 	build: {
 		emptyOutDir: true,
 		outDir: Path.resolve(__dirname, './build'),
