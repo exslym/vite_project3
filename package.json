@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "start": "vite --open",
+    "serve": "vite preview --open",
+    "dev": "vite",
     "build": "cross-env BUILD_TYPE=dev vite build",
-    "serve": "vite preview --port 3001 --open",
     "deploy": "gh-pages -d build"
   },
   "keywords": [],

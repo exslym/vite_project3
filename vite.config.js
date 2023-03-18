@@ -7,7 +7,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import pages from './src/pages/pages.config';
 
 const DEFAULT_OPTIONS = {
-  test: /\.(jpe?g|png|tiff|webp|svg|avif)$/i,
+  test: /\.(svg|png|jpe?g|tiff|gif|webp|avif)$/i,
   exclude: undefined,
   include: undefined,
   excludePublic: ['./public/**/*'],
@@ -21,7 +21,7 @@ const DEFAULT_OPTIONS = {
         params: {
           overrides: {
             cleanupNumericValues: false,
-            removeViewBox: false, // https://github.com/svg/svgo/issues/1128
+            removeViewBox: false,
           },
           cleanupIDs: {
             minify: false,
@@ -81,6 +81,20 @@ export default defineConfig({
         ...pagesInput,
       },
       output: {
+        assetFileNames: (assetInfo) => {
+          let info = assetInfo.name.split('.');
+          let extType = info[info.length - 1];
+
+          if (/svg|png|jpe?g|tiff|gif|webp|avif|bmp|ico/i.test(extType)) {
+            extType = 'images';
+          } else if (/eot|otf|ttf|fnt|woff|woff2/.test(extType)) {
+            extType = 'fonts';
+          } else if (/css/.test(extType)) {
+            extType = 'css';
+          }
+          return `assets/${extType}/[name]-[hash][extname]`;
+        },
+
         entryFileNames: 'js/[name]-[hash].js',
         chunkFileNames: 'js/[name]-[hash].js',
       },
