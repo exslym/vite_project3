@@ -11,7 +11,7 @@ const DEFAULT_OPTIONS = {
   exclude: undefined,
   include: undefined,
   excludePublic: ['./public/**/*'],
-  includePublic: false, //* 3D-models in public with lossless quality
+  includePublic: false,
   logStats: true,
   svg: {
     multipass: true,
