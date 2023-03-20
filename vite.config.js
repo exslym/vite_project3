@@ -1,4 +1,5 @@
 import legacy from '@vitejs/plugin-legacy';
+import autoprefixer from 'autoprefixer';
 import Path from 'path';
 import { defineConfig } from 'vite';
 import { ViteAliases } from 'vite-aliases';
@@ -70,9 +71,6 @@ export default defineConfig({
   root: Path.resolve(__dirname, './src'),
   base: './',
   publicDir: '../public',
-  css: {
-    devSourcemap: true,
-  },
   build: {
     emptyOutDir: true,
     outDir: Path.resolve(__dirname, './build'),
@@ -107,9 +105,15 @@ export default defineConfig({
     }),
     ViteAliases(),
     legacy({
-      targets: ['defaults', 'not IE 11'],
+      targets: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'not dead'],
     }),
   ],
+  css: {
+    postcss: {
+      plugins: [autoprefixer],
+    },
+    devSourcemap: true,
+  },
   server: {
     port: 3000,
     host: '0.0.0.0',
