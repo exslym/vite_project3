@@ -1,14 +1,28 @@
 @import url('../assets/tools/normalize.min.css');
 @import url('../assets/tools/magnific-popup.css');
 
-@import url('../assets/fonts/Calibri/stylesheet.css');
-@import url('../assets/fonts/CommissionerThin/stylesheet.css');
+@import url('https://fonts.googleapis.com/css?family=Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css?family=Commissioner:100,200,300,regular,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap');
- */
-@import './additionals/mixins';
-@import './additionals/animations';
-@import './additionals/variables';
-@import './additionals/defaults';
-@import './main';
+@import './main/mixins';
+@import './main/animations';
+@import './main/variables';
+@import './main/defaults';
+@import './main/additionals';
+@import './main/extra';
+@import './main/zoom';
+@import './main/modals';
+@import './main/header';
+/* pages: */
+@import './pages/startPage';
+@import './pages/resultPage';
+@import './pages/painPage';
+@import './pages/neuropathic1';
+@import './pages/neuropathic2';
+@import './pages/neuropathic3';
+@import './pages/cognitive1';
+@import './pages/cognitive2';
+@import './pages/cognitive3';
+@import './pages/nociceptive1';
+@import './pages/nociceptive2';
+@import './pages/nociceptive3';
