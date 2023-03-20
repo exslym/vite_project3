@@ -1,0 +1,61 @@
+#scale1,
+#graph1_n1_test1,
+#graph1_n1_test2,
+#graph2_n1_test2,
+#graph1_n1_test3,
+#graph1_n1_test4,
+#graph1_n2_test3,
+#graph1_n3_test3,
+#graph2_n3_test3,
+#graph1_c1_test1,
+#graph1_c1_test3,
+#graph3_c3_test3 {
+  position: relative;
+  background: var(--clr-white);
+  border-radius: 20px;
+  padding: 40px 16px 10px;
+  img {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+}
+#scale1 {
+  background: url('../assets/images/bg_main.jpg');
+  background-size: 250%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  img {
+    min-width: 1100px;
+  }
+}
+#graph1_n1_test1 img {
+  min-width: 425px;
+}
+#graph1_n1_test2 img {
+  min-width: 900px;
+}
+#graph2_n1_test2 img {
+  min-width: 430px;
+}
+#graph1_n1_test3 img {
+  min-width: 600px;
+}
+#graph1_n1_test4 img {
+  min-width: 520px;
+}
+#graph1_n2_test3 img {
+  min-width: 550px;
+}
+#graph1_n3_test3 img,
+#graph2_n3_test3 img {
+  min-width: 500px;
+}
+#graph1_c1_test1 img {
+  min-width: 560px;
+}
+#graph1_c1_test3 img {
+  min-width: 550px;
+}
+#graph3_c3_test3 img {
+  min-width: 600px;
+}

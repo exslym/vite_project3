@@ -1,0 +1,108 @@
+.flexRowStretchSB {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+}
+.flexRowCenterSB {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.flexRowFSSB {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.flexRowFESB {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.flexRowFS {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.flexRowCenterFS {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.flexRowCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flexColumn {
+	flex-direction: column;
+}
+.flexColumnRev {
+	flex-direction: column-reverse;
+}
+.customBox1 {
+	border-radius: clamp(20px, 2.1vw, 40px);
+	border: clamp(1px, 0.1vw, 2px) solid #eaf3ff;
+}
+.customBox2 {
+	border-radius: clamp(10px, 1.05vw, 20px);
+	background: #f6f0fe;
+}
+.padding40_60 {
+	padding: clamp(16px, 2.1vw, 40px) clamp(16px, 3.15vw, 60px);
+}
+.padding30_60 {
+	padding: clamp(16px, 1.57vw, 30px) clamp(16px, 3.15vw, 60px);
+}
+.padding25_50 {
+	padding: clamp(16px, 1.31vw, 25px) clamp(16px, 2.63vw, 50px);
+}
+.padding25_45 {
+	padding: clamp(16px, 1.31vw, 25px) clamp(16px, 2.36vw, 45px);
+}
+.padding50 {
+	padding: clamp(16px, 2.63vw, 50px);
+}
+.padding40 {
+	padding: clamp(16px, 2.1vw, 40px);
+}
+.padding35 {
+	padding: clamp(16px, 1.84vw, 35px);
+}
+.padding30 {
+	padding: clamp(16px, 1.57vw, 30px);
+}
+.padding25 {
+	padding: clamp(16px, 1.31vw, 35px);
+}
+.hidden {
+	display: none;
+}
+.overflow-hidden {
+	overflow-y: hidden;
+}
+.non-visible {
+	visibility: hidden;
+	animation: fade-in 0.4s linear;
+}
+.mob-scroll {
+	overflow-x: auto;
+	&::-webkit-scrollbar {
+		height: 12px;
+		border-radius: 20px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: rgba(0, 0, 0, 0.05);
+		border-radius: 20px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 20px;
+		border: solid 2px transparent;
+		border-top-width: 2px;
+		border-bottom-width: 2px;
+		border-left-width: 2px;
+		border-right-width: 2px;
+		box-sizing: border-box;
+		background-clip: content-box;
+	}
+}

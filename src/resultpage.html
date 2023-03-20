@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- PROJECT_NAME for Google Analytics - the same for all pages: -->
+    <meta name="projectName" content="CNS Portfolio" />
+    <!-- PAGE_TITLE for Google Analytics - variable for each page: -->
+    <title data-title="pageTitle">Result_Page</title>
+    <!-- Google Analytics (GA) -->
+
+    <script src="./scripts/index.js" type="module"></script>
+
+    <script src="tools/jquery-3.6.3.min.js"></script>
+    <script src="tools/magnific-popup.min.js"></script>
+
+    <!-- Google Analytics Universal (UA) -->
+    <!-- <script type="text/javascript">
+			window.addEventListener('load', function () {
+				(function (i, s, o, g, r, a, m) {
+					i['GoogleAnalyticsObject'] = r;
+					(i[r] =
+						i[r] ||
+						function () {
+							(i[r].q = i[r].q || []).push(arguments);
+						}),
+						(i[r].l = 1 * new Date());
+					(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+					a.async = 1;
+					a.src = g;
+					m.parentNode.insertBefore(a, m);
+				})(
+					window,
+					document,
+					'script',
+					'https://www.google-analytics.com/analytics.js',
+					'ga'
+				);
+
+				ga('create', 'UA-143784199-34', 'auto', { name: 'CNS_Portfolio_2022' });
+				ga('CNS_Portfolio_2022.set', 'page', 'page/1002095#resultpage');
+				ga('CNS_Portfolio_2022.set', 'title', 'Result_Page');
+
+				window.addEventListener('message', e => {
+					if (e.data) {
+						console.dir(e.data);
+						ga(
+							'CNS_Portfolio_2022.send',
+							'event',
+							e.data.category,
+							e.data.action,
+							e.data.label
+						);
+					}
+				});
+			});
+		</script> -->
+
+    <!-- Google Analytics Universal (UA) - NoBounce -->
+    <!-- <script type="text/javascript">
+			window.addEventListener('load', function () {
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 10 seconds', 'Result_Page')",
+					10000
+				);
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 15 seconds', 'Result_Page')",
+					15000
+				);
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 20 seconds', 'Result_Page')",
+					20000
+				);
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 30 seconds', 'Result_Page')",
+					30000
+				);
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 40 seconds', 'Result_Page')",
+					40000
+				);
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 1 minute', 'Result_Page')",
+					60000
+				);
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 2 minutes', 'Result_Page')",
+					120000
+				);
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 3 minutes', 'Result_Page')",
+					180000
+				);
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 5 minutes', 'Result_Page')",
+					300000
+				);
+				setTimeout(
+					"ga('CNS_Portfolio_2022.send', 'event', 'NoBounce', 'Over 10 minutes', 'Result_Page')",
+					600000
+				);
+			});
+		</script> -->
+
+    <!-- Google Analytics Universal (UA) - Sections views analytics -->
+    <!-- <script>
+			window.addEventListener('load', () => {
+				const observer = new IntersectionObserver(
+					entries => {
+						entries.forEach(({ isIntersecting, target }) => {
+							if (!isIntersecting) return;
+							target.classList.add('_visited');
+							ga(
+								'CNS_Portfolio_2022.send',
+								'event',
+								'section',
+								`${target.id}`,
+								`${document.querySelector('head title').textContent}`
+							);
+						});
+					},
+					{ threshold: 0.1 }
+				);
+				const sections = document.querySelectorAll('.forObserver');
+				sections.forEach(section => observer.observe(section));
+			});
+		</script> -->
+  </head>
+
+  <body>
+    <div class="wrapper wrapper-result-page" id="Result_Page">
+      <div class="result">
+        <div class="result__top">
+          <div class="result__top_whitebox forObserver" id="Result_Page_info">
+            <div class="result__top_whitebox-content">
+              <h2 class="result__top_whitebox-title result-header">
+                Поздравляем, Вы&nbsp;превосходно прошли курс терапии ДПН!
+              </h2>
+              <div class="result__top_whitebox-block">
+                <p class="text result-text">
+                  Скачайте статью для&nbsp;изучения В.А.&nbsp;Парфенов, М.В.&nbsp;Коняшова Терапия
+                  болевой диабетической невропатии
+                </p>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="result__top_whitebox-button button-download result-button-download"
+                  data-name=""
+                  onclick="console.log('CNS_Portfolio_2022.send', 'event', 'button', `download - ${dataset.name}`, 'Result_Page')"
+                >
+                  <p>Скачать</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h2 class="result__top_header">Проверьте свои знания в&nbsp;лечении других патологий</h2>
+          <div class="result__top_variants variants forObserver" id="Result_page_menu">
+            <div class="variant variant1">
+              <div class="variant__box box2">
+                <img
+                  class="variant__box_icon"
+                  src="./assets/images/icon_nociceptive_pain.svg"
+                  alt="nociceptive"
+                />
+                <h3 class="variant__box_title">Ноцицептивная боль</h3>
+                <ul class="variant__box_list list2">
+                  <li>
+                    <a
+                      href="nociceptive1.html"
+                      class="menu-link"
+                      data-label="nociceptive1"
+                      data-name="result_page-menu_portrait_1_osteo"
+                    >
+                      Остеохондроз (дорсалгия)
+                    </a>
+                  </li>
+                  <div class="variant__box_line"></div>
+                  <li>
+                    <a
+                      href="nociceptive2.html"
+                      class="menu-link"
+                      data-label="nociceptive2"
+                      data-name="result_page-menu_portrait_2_osteo_kol_sust"
+                    >
+                      Остеоартрит коленного сустава
+                    </a>
+                  </li>
+                  <div class="variant__box_line"></div>
+                  <li>
+                    <a
+                      href="nociceptive3.html"
+                      class="menu-link"
+                      data-label="nociceptive3"
+                      data-name="result_page-menu_portrait_3_posttravm_osteo"
+                    >
+                      Посттравматический остеоартрит коленного&nbsp;сустава
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="variant variant2">
+              <div class="variant__box box2">
+                <img
+                  class="variant__box_icon"
+                  src="./assets/images/icon_neuropathic_pain.svg"
+                  alt="neuropathic"
+                />
+                <h3 class="variant__box_title">Нейропатическая боль</h3>
+                <ul class="variant__box_list list2">
+                  <li>
+                    <a
+                      href="neuropathic1.html"
+                      class="menu-link"
+                      data-label="neuropathic1"
+                      data-name="result_page-menu_portrait_4_dpn"
+                    >
+                      Болевая форма диабетической нейропатии
+                    </a>
+                  </li>
+                  <div class="variant__box_line"></div>
+                  <li>
+                    <a
+                      href="neuropathic2.html"
+                      class="menu-link"
+                      data-label="neuropathic2"
+                      data-name="result_page-menu_portrait_5_pgn"
+                    >
+                      Постгерпетическая невралгия
+                    </a>
+                  </li>
+                  <div class="variant__box_line"></div>
+                  <li>
+                    <a
+                      href="neuropathic3.html"
+                      class="menu-link"
+                      data-label="neuropathic3"
+                      data-name="result_page-menu_portrait_6_radicul"
+                    >
+                      Боль в&nbsp;спине с&nbsp;радикулопатией
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="variant variant3">
+              <div class="variant__box box2">
+                <img
+                  class="variant__box_icon"
+                  src="./assets/images/icon_cognitive_imp.svg"
+                  alt="cognitive"
+                />
+                <h3 class="variant__box_title">Когнитивные нарушения</h3>
+                <ul class="variant__box_list list2">
+                  <li>
+                    <a
+                      href="cognitive1.html"
+                      class="menu-link"
+                      data-label="cognitive1"
+                      data-name="result_page-menu_portrait_7_covid"
+                    >
+                      Когнитивные нарушения после Сovid&#8209;19
+                    </a>
+                  </li>
+                  <div class="variant__box_line"></div>
+                  <li>
+                    <a
+                      href="cognitive2.html"
+                      class="menu-link"
+                      data-label="cognitive2"
+                      data-name="result_page-menu_portrait_8_ag"
+                    >
+                      Когнитивные нарушения при&nbsp;артериальной гипертензии
+                    </a>
+                  </li>
+                  <div class="variant__box_line"></div>
+                  <li>
+                    <a
+                      href="cognitive3.html"
+                      class="menu-link"
+                      data-label="cognitive3"
+                      data-name="result_page-menu_portrait_9_him"
+                    >
+                      Хроническая ишемия мозга (ХИМ)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result__drugs">
+          <h2 class="result__drugs_title">Схема применения:</h2>
+          <div class="result__drugs_buttons">
+            <div
+              class="result__drugs_button result__drugs_button1 button drugs-button"
+              data-label="neurontin"
+              data-name="scheme_Neurontin"
+            >
+              <p>Нейронтин<sup class="reg">&reg;</sup></p>
+            </div>
+            <div
+              class="result__drugs_button result__drugs_button2 button drugs-button"
+              data-label="thioctacid"
+              data-name="scheme_Thioctacid"
+            >
+              <p>
+                Тиоктацид<sup class="reg">&reg;</sup>&nbsp;600Т Тиоктацид<sup class="reg">&reg;</sup
+                >&nbsp;БВ
+              </p>
+            </div>
+            <div
+              class="result__drugs_button result__drugs_button3 button drugs-button"
+              data-label="celebrex"
+              data-name="scheme_Celebrex"
+            >
+              <p>Целебрекс<sup class="reg">&reg;</sup></p>
+            </div>
+            <div
+              class="result__drugs_button result__drugs_button4 button drugs-button"
+              data-label="dona"
+              data-name="scheme_Dona"
+            >
+              <p>Дона<sup class="reg">&reg;</sup></p>
+            </div>
+            <div
+              class="result__drugs_button result__drugs_button5 button drugs-button"
+              data-label="sermion"
+              data-name="scheme_Sermion"
+            >
+              <p>Сермион<sup class="reg">&reg;</sup></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="result__description neurontin forObserver" id="scheme_Neurontin">
+          <div class="result__description_packshot result__description_white">
+            <div class="result__description_wrap flexRowCenterSB">
+              <div class="packshot">
+                <img src="./assets/images/packshot_neurontin.png" alt="neurontin" />
+              </div>
+              <div class="text">
+                <h3>
+                  Нейронтин<sup class="reg">&reg;</sup>&nbsp;&mdash; стабильный контроль
+                  нейропатической боли<sup>1,2</sup>.
+                </h3>
+                <h3>Уникально<sup>* 1,3</sup>, удобно<sup>** 1</sup>, доступно<sup>4</sup>.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="footnote__middle">
+            <p class="footnote__text">* Нет аналогов габапентинов для дозы 600&nbsp;мг</p>
+            <p class="footnote__text">
+              ** Выпускается в&nbsp;виде капсул и&nbsp;делимых таблеток для удобства титрации дозы
+              и&nbsp;подбора терапии
+            </p>
+          </div>
+          <div class="result__description_variants variants">
+            <div class="variant">
+              <div class="variant__box box2">
+                <img src="./assets/images/neurontin_tablet.png" alt="tablet" />
+              </div>
+            </div>
+
+            <div class="variant">
+              <div class="variant__box box2">
+                <img src="./assets/images/neurontin_capsule.png" alt="capsule" />
+              </div>
+            </div>
+
+            <div class="variant">
+              <div class="variant__box box2">
+                <p class="text">
+                  Лечение можно начинать сразу с&nbsp;дозы
+                  <strong>900&nbsp;мг/сутки</strong> (по&nbsp;300&nbsp;мг 3&nbsp;раза в&nbsp;сутки)
+                  или можно увеличивать дозу постепенно до&nbsp;900&nbsp;мг в&nbsp;сутки
+                  в&nbsp;течение первых 3&nbsp;дней<sup>1</sup>
+                </p>
+                <div class="line"></div>
+                <p class="text">
+                  При необходимости и&nbsp;в&nbsp;зависимости от&nbsp;эффекта дозу постепенно
+                  увеличивают до&nbsp;максимальной&nbsp;&mdash;
+                  <strong>3600&nbsp;мг/сутки</strong><sup>1</sup>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="result__description_text">
+            <p class="title">
+              В&nbsp;зависимости от&nbsp;ответа на&nbsp;терапию и&nbsp;переносимости препарата доза
+              препарата
+              <strong>Нейронтин<sup class="reg">&reg;</sup></strong> может быть
+              <strong
+                >повышена на&nbsp;300&nbsp;мг/сутки каждые 2&ndash;3&nbsp;дня, максимально
+                до&nbsp;3600&nbsp;мг/сутки</strong
+              ><sup>1</sup>
+            </p>
+          </div>
+          <div class="result__description_borders borders">
+            <div class="textbox">
+              <p class="title">
+                Минимальное время, за&nbsp;которое можно повысить дозу<sup>1</sup>:
+              </p>
+              <ul class="list list1">
+                <li>
+                  <strong>до&nbsp;1800&nbsp;мг/сутки&nbsp;&mdash;</strong>
+                  1&nbsp;неделя
+                </li>
+                <li>
+                  <strong>до&nbsp;2400&nbsp;мг/сутки&nbsp;&mdash;</strong>
+                  2&nbsp;недели
+                </li>
+                <li>
+                  <strong>до&nbsp;3600&nbsp;мг/сутки&nbsp;&mdash;</strong>
+                  3&nbsp;недели
+                </li>
+              </ul>
+            </div>
+            <div class="border">
+              <p class="title">
+                У&nbsp;пациентов в&nbsp;тяжелом состоянии (с&nbsp;пониженной массой тела, после
+                трансплантации органов) дозу следует повышать медленно<sup>1</sup>:
+              </p>
+              <ul class="list list1">
+                <li>используя меньшие дозы</li>
+                <li>увеличивая интервалы перед повышением дозы</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="result__description_variants variants">
+            <div class="variant">
+              <div class="variant__box box2">
+                <div class="variant__box_content">
+                  <img src="./assets/images/icon_calendar.svg" alt="calendar" />
+                  <p class="title">
+                    <strong>Первый этап лечения</strong> препаратом Нейронтин<sup class="reg"
+                      >&reg;</sup
+                    >&nbsp;&mdash; <strong>4&nbsp;недели</strong><sup>5</sup>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result__description_scale">
+            <h3>Дальнейшая тактика ведения пациентов<sup>5</sup></h3>
+            <img src="./assets/images/neurontin_scale1.svg" alt="scale" />
+            <div class="button_zoom">
+              <a href="#scale1" class="button_plus popup" onclick="event.stopPropagation()"
+                >+ приблизить</a
+              >
+            </div>
+            <p class="title">
+              Отменять Нейронтин<sup class="reg">&reg;</sup> следует постепенно&nbsp;&mdash;
+              в&nbsp;течение 1&nbsp;недели минимум<sup>1</sup>
+            </p>
+          </div>
+
+          <div class="result__description_mechanism">
+            <h2 class="title">
+              Механизм действия габапентина (Нейронтин<sup class="reg">&reg;</sup>)<sup>1</sup>:
+            </h2>
+            <div class="border">
+              <p class="text">
+                Габапентин связывается с&nbsp;&alpha;-2-&delta; (альфа-2-дельта) субъединицей
+                потенциалзависимых кальциевых каналов в&nbsp;&laquo;перевозбужденных&raquo; нейронах
+              </p>
+            </div>
+            <img class="arrow" src="./assets/images/icon_arrow-down.svg" alt="arrow" />
+            <div class="border">
+              <p class="text">Блокирует поступление кальция в&nbsp;нейрон на&nbsp;пресинапсе</p>
+            </div>
+            <img class="arrow" src="./assets/images/icon_arrow-down.svg" alt="arrow" />
+            <div class="border">
+              <p class="text">
+                Препятствует высвобождению глутамата в&nbsp;синаптическую щель в&nbsp;ответ
+                на&nbsp;болевой импульс
+              </p>
+            </div>
+            <img class="arrow" src="./assets/images/icon_arrow-down.svg" alt="arrow" />
+            <div class="border">
+              <p class="text">
+                Прекращает передачу болевого импульса с&nbsp;периферического на&nbsp;центральный
+                нейрон
+              </p>
+            </div>
+            <img class="arrow" src="./assets/images/icon_arrow-down.svg" alt="arrow" />
+            <div class="border">
+              <p class="text">Способствует уменьшению боли</p>
+            </div>
+          </div>
+
+          <div class="result__description_packshot result__description_white">
+            <div class="result__description_wrap flexRowCenterSB">
+              <div class="packshot">
+                <img src="./assets/images/packshot_neurontin.png" alt="neurontin" />
+              </div>
+              <div class="text">
+                <h3>
+                  Нейронтин<sup class="reg">&reg;</sup>&nbsp;&mdash; оригинальный габапентин,
+                  действует на&nbsp;&laquo;перевозбужденные&raquo; нейроны, не&nbsp;влияя
+                  на&nbsp;нормально функционирующие<sup>2,5,6</sup>.
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="result__drugs_buttons buttons">
+            <a
+              href="public/docs/Brochure_Neirontin_2022_scheme.pdf"
+              target="_blank"
+              class="result__drugs_button button"
+              data-label="Neurontin_dose-map"
+              onclick="console.log('CNS_Portfolio_2022.send', 'event', 'button', `download - ${dataset.label}`, 'Result_Page')"
+            >
+              <p>Скачать карту дозирования</p>
+            </a>
+            <a
+              href="public/docs/Neurontin_Caps_LLD_2020-12-09.pdf"
+              target="_blank"
+              class="result__drugs_button button"
+              data-label="Neurontin_instruction(caps)"
+              onclick="console.log('CNS_Portfolio_2022.send', 'event', 'button', `download - ${dataset.label}`, 'Result_Page')"
+            >
+              <p>Скачать инструкцию Нейронтин (капсулы)</p>
+            </a>
+            <a
+              href="public/docs/Neurontin_Tab_LLD_2020-12-08.pdf"
+              target="_blank"
+              class="result__drugs_button button"
+              data-label="Neurontin_instruction(pills)"
+              onclick="console.log('CNS_Portfolio_2022.send', 'event', 'button', `download - ${dataset.label}`, 'Result_Page')"
+            >
+              <p>Скачать инструкцию Нейронтин (таблетки)</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="result__description thioctacid forObserver" id="scheme_Thioctacid">
+          <div class="result__description_packshot">
+            <div class="packshot">
+              <img src="./assets/images/packshot_thioctacid.png" alt="thioctacid" />
+            </div>
+            <div class="text">
+              <h2>
+                Тиоктацид<sup class="reg">&reg;</sup>&nbsp;600Т и&nbsp;Тиоктацид<sup class="reg"
+                  >&reg;</sup
+                >&nbsp;БВ&nbsp;&mdash;
+                <b>
+                  <br />оригинальные препараты альфа&#8209;липоевой (тиоктовой) кислоты<sup
+                    >1</sup
+                  ></b
+                >
+              </h2>
+            </div>
+          </div>
+          <div class="result__description_borders">
+            <div class="result__description_border result__description_border1">
+              <p class="title">
+                Тиоктацид<sup class="reg">&reg;</sup>&nbsp;БВ &#8470;30&nbsp;и &#8470;100&nbsp;<sup
+                  >2</sup
+                >
+              </p>
+              <ul class="list">
+                <li>
+                  <img src="./assets/images/icon_dose.svg" alt="dose" />
+                  <p>
+                    <strong>Рекомендуемая доза&nbsp;&mdash;</strong>
+                    1&nbsp;таблетка (600&nbsp;мг) 1&nbsp;раз в&nbsp;день
+                  </p>
+                </li>
+                <li>
+                  <img src="./assets/images/icon_time.svg" alt="time" />
+                  <p>
+                    Препарат принимают натощак, за&nbsp;30&nbsp;мин до&nbsp;завтрака, запивая водой
+                    и&nbsp;не&nbsp;разжевывая
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="result__description_border result__description_border2">
+              <p class="title">
+                Тиоктацид<sup class="reg">&reg;</sup>&nbsp;600Т&nbsp;&mdash; раствор 600&nbsp;мг
+                (24&nbsp;мл) &#8470;5&nbsp;<sup>2</sup>
+                <br />
+                может применяться в&nbsp;виде:
+              </p>
+              <ul class="list">
+                <li>
+                  <img src="./assets/images/icon_infusion.svg" alt="infusion" />
+                  <p>
+                    инфузий в&nbsp;0,9% растворе хлорида натрия (объем инфузии&nbsp;&mdash;
+                    100&ndash;250&nbsp;мл) в&nbsp;течение 30&nbsp;мин
+                  </p>
+                </li>
+                <li>
+                  <img src="./assets/images/icon_injector.svg" alt="injector" />
+                  <p>
+                    неразбавленного раствора с&nbsp;помощью шприца для в/в инъекций и&nbsp;перфузора
+                    (время введения не&nbsp;менее 12&nbsp;мин)
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="result__description_text">
+            <p>
+              Терапия ДПН подразумевает длительный период, поскольку негативные факторы
+              (гипергликемия, оксидативный стресс и&nbsp;т.д.), приводящие к&nbsp;развитию этого
+              осложнения, никуда не&nbsp;исчезают<sup>1-3</sup>.
+            </p>
+            <br />
+            <p>
+              Таблетированные формы препаратов позволяют проводить терапию без необходимости
+              обращаться за&nbsp;специализированной помощью для проведения в/в
+              инфузий<sup>1-3</sup>.
+            </p>
+          </div>
+          <div class="result__description_white">
+            <p class="result__description_white-text">
+              Тиоктацид<sup class="reg">&reg;</sup>&nbsp;БВ&nbsp;&mdash; оригинальный препарат
+              тиоктовой кислоты с&nbsp;улучшенными показателями фармакокинетики, позволяет
+              поддерживать стабильную терапевтическую концентрацию препарата в&nbsp;крови<sup
+                >1-3</sup
+              >
+            </p>
+          </div>
+          <div class="result__description_borders">
+            <div class="result__description_border result__description_border3">
+              <ul class="list">
+                <li>
+                  <img src="./assets/images/icon_treatment.svg" alt="treatment" />
+                  <p>
+                    <strong>В&nbsp;тяжелых случаях лечение</strong> начинают с&nbsp;назначения
+                    препарата Тиоктацид<sup class="reg">&reg;</sup>&nbsp;600Т&nbsp;&mdash; раствора
+                    для внутривенного введения&nbsp;&mdash; в&nbsp;течение 2&ndash;4&nbsp;недель,
+                    затем пациента переводят на&nbsp;лечение Тиоктацид<sup class="reg">&reg;</sup
+                    >&nbsp;БВ<sup>2</sup>.
+                  </p>
+                </li>
+                <li>
+                  <img src="./assets/images/icon_research.svg" alt="research" />
+                  <p>
+                    Согласно проведенным исследованиям применение тиоктовой кислоты
+                    от&nbsp;3&nbsp;недель до&nbsp;4&nbsp;лет приводило
+                    <strong>к&nbsp;уменьшению симптомов ДПН и&nbsp;неврологического дефицита</strong
+                    ><sup>1-3</sup>.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="result__description_text">
+            <h2>Механизм действия</h2>
+            <br />
+            <p>
+              Тиоктовая кислота является эндогенным антиоксидантом, по&nbsp;биохимическому механизму
+              действия она близка к&nbsp;витаминам группы&nbsp;В<sup>2</sup>.
+            </p>
+          </div>
+          <div class="result__description_borders">
+            <div class="result__description_border result__description_border4">
+              <p class="title">Тиоктовая кислота способствует<sup>2</sup>:</p>
+              <ul class="list list1">
+                <li>
+                  защите клетки от&nbsp;токсического действия свободных радикалов, возникающих
+                  в&nbsp;процессах обмена веществ
+                </li>
+                <li>обезвреживанию экзогенных токсичных соединений, проникших в&nbsp;организм</li>
+                <li>
+                  повышению концентрации эндогенного антиоксиданта глютатиона &rarr; уменьшению
+                  выраженности симптомов полинейропатии
+                </li>
+              </ul>
+              <div class="box">
+                <div class="box_item">
+                  <p class="title">Препарат может оказывать действие<sup>2</sup>:</p>
+                  <div class="listbox">
+                    <ul class="list list1">
+                      <li>улучшающее трофику нейронов</li>
+                      <li>гепатопротекторное</li>
+                      <li>гипохолестеринемическое</li>
+                    </ul>
+                    <ul class="list list1">
+                      <li>гиполипидемическое</li>
+                      <li>гипогликемическое</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box_item result__description_white">
+                  <p class="result__description_white-text">
+                    Результатом синергического действия тиоктовой кислоты и&nbsp;инсулина является
+                    повышение утилизации глюкозы<sup>2</sup>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result__description celebrex forObserver" id="scheme_Celebrex">
+          <div class="result__description_white">
+            <div class="result__description_wrap flexRowFS">
+              <div class="packshot">
+                <img src="./assets/images/packshot_celebrex.png" alt="celebrex" />
+              </div>
+              <div class="text">
+                <h2>
+                  Целебрекс<sup class="reg">&reg;</sup
+                  ><i
+                    >&nbsp;&mdash; оптимальный баланс эффективности и&nbsp;безопасности
+                    в&nbsp;терапии боли<sup>1,2</sup></i
+                  >
+                </h2>
+                <p class="title">Согласно исследованиям,</p>
+                <ul class="list list5">
+                  <li>
+                    наступление эффекта возможно уже через 22&nbsp;минуты, длительность&nbsp;&mdash;
+                    до&nbsp;24&nbsp;часов<sup>3</sup>
+                  </li>
+                  <li>нет ограничений по&nbsp;длительности приёма**<sup>1</sup></li>
+                </ul>
+                <p class="bottom">
+                  **Согласно инструкции по&nbsp;применению препарата Целебрекс<sup class="reg"
+                    >&reg;</sup
+                  >
+                  капсулы, рег.&nbsp;уд. ЛП-002118, П&nbsp;N015986/01
+                </p>
+              </div>
+            </div>
+            <div class="result__description_scheme">
+              <p class="result__description_scheme-title">Схема применения</p>
+              <div class="schemebox customBox2 padding40 flexRowStretchSB">
+                <div class="schemebox__item schemebox__item1">
+                  <p class="schemebox__item_title">Острая боль<sup>1</sup>:</p>
+                  <p class="schemebox__item_subtitle">
+                    Боль в&nbsp;спине, костно-мышечные боли, первичная дисменорея, послеоперационные
+                    боли, другие сравнимые по&nbsp;интенсивности боли
+                  </p>
+                  <img
+                    class="schemebox__item_scheme schemebox__item_scheme1"
+                    src="./assets/images/celebrex_scheme1.svg"
+                    alt="scheme"
+                  />
+                  <img
+                    class="schemebox__item_scheme schemebox__item_scheme2"
+                    src="./assets/images/celebrex_scheme2.svg"
+                    alt="scheme"
+                  />
+                  <img
+                    class="schemebox__item_scheme-mob schemebox__item_scheme-mob1"
+                    src="./assets/images/celebrex_scheme1-mob.svg"
+                    alt="scheme"
+                  />
+                  <img
+                    class="schemebox__item_scheme-mob schemebox__item_scheme-mob2"
+                    src="./assets/images/celebrex_scheme2-mob.svg"
+                    alt="scheme"
+                  />
+                </div>
+                <img
+                  class="schemebox__item schemebox__item2 dividing-vert-line"
+                  src="./assets/images/dividing-vert-line.svg"
+                  alt="line"
+                />
+                <div class="schemebox__item schemebox__item3">
+                  <p class="schemebox__item_title">Хроническая боль<sup>1</sup>:</p>
+                  <img
+                    class="schemebox__item_scheme schemebox__item_scheme3"
+                    src="./assets/images/celebrex_scheme3.svg"
+                    alt="scheme"
+                  />
+                  <img
+                    class="schemebox__item_scheme-mob schemebox__item_scheme-mob3"
+                    src="./assets/images/celebrex_scheme3-mob.svg"
+                    alt="scheme"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result__description dona forObserver" id="scheme_Dona">
+          <div class="result__description_white">
+            <div class="result__description_wrap flexRowStretchSB">
+              <div class="packshot">
+                <img src="./assets/images/packshot_dona.png" alt="dona" />
+              </div>
+              <div class="text">
+                <h2>
+                  Дона<sup class="reg">&reg;</sup
+                  ><i
+                    >&nbsp;&mdash; оригинальный кристаллический глюкозамина сульфат для базовой
+                    терапии&nbsp;ОА<sup>1&#8209;3</sup></i
+                  >
+                </h2>
+                <p class="title">
+                  Тройной эффект Дона<sup class="reg">&reg;</sup>
+                  способствует<sup>1</sup>:
+                </p>
+                <ul class="list list5">
+                  <li>уменьшению боли</li>
+                  <li>восстановлению функции сустава</li>
+                  <li>защите сустава от&nbsp;разрушения</li>
+                </ul>
+              </div>
+            </div>
+            <div class="result__description_scheme">
+              <p class="result__description_scheme-title">
+                Схема курсового применения препарата Дона<sup class="reg">&reg;</sup>
+              </p>
+              <p class="result__description_scheme-subtitle">
+                (курс 3&ndash;6 месяцев 1&ndash;2 раза в&nbsp;год)<sup>1,4,5</sup>
+              </p>
+              <div class="schemebox customBox1 padding40">
+                <div class="schemebox__item schemebox__item1 flexRowCenterFS">
+                  <img
+                    class="schemebox__item_circle"
+                    src="./assets/images/dona_circle1.svg"
+                    alt="circle"
+                  />
+                  <div class="schemebox__item_content flexRowCenterFS">
+                    <img
+                      class="schemebox__item_pic schemebox__item_pic1"
+                      src="./assets/images/dona_scheme1.svg"
+                      alt="picture"
+                    />
+                    <img
+                      class="schemebox__item_plus schemebox__item_plus"
+                      src="./assets/images/dona_plus.svg"
+                      alt="plus"
+                    />
+                    <img
+                      class="schemebox__item_pic schemebox__item_pic2"
+                      src="./assets/images/dona_scheme2.svg"
+                      alt="picture"
+                    />
+                  </div>
+                </div>
+                <div class="schemebox__item schemebox__item2 flexRowCenterFS">
+                  <img
+                    class="schemebox__item_circle"
+                    src="./assets/images/dona_circle2.svg"
+                    alt="circle"
+                  />
+                  <div class="schemebox__item_content flexRowCenterFS">
+                    <img
+                      class="schemebox__item_pic schemebox__item_pic3"
+                      src="./assets/images/dona_scheme3.svg"
+                      alt="picture"
+                    />
+                    <img
+                      class="schemebox__item_pic schemebox__item_pic4"
+                      src="./assets/images/dona_scheme4.svg"
+                      alt="picture"
+                    />
+                  </div>
+                </div>
+                <p class="schemebox__bottom">
+                  При повторных курсах и&nbsp;у&nbsp;пациентов без выраженного болевого синдрома или
+                  нарушения движения суставов, можно использовать саше или таблетки в&nbsp;течение
+                  3&#8209;6&nbsp;месяцев<sup>1,4,5</sup>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result__description sermion forObserver" id="scheme_Sermion">
+          <div class="result__description_packshot result__description_white">
+            <div class="result__description_wrap flexRowCenterSB">
+              <div class="text">
+                <h4>
+                  Препарат Сермион<sup class="reg">&reg;</sup> (ницерголин) содействует увеличению
+                  доступности ацетилхолина за&nbsp;счет<sup>1-4</sup>:
+                </h4>
+                <ul class="list list5">
+                  <li>повышенного высвобождения из&nbsp;холинергических окончаний</li>
+                  <li>угнетения активности ацетилхолинэстеразы</li>
+                </ul>
+              </div>
+              <div class="packshot">
+                <img src="./assets/images/packshot_sermion-alt2.png" alt="sermion" />
+              </div>
+            </div>
+          </div>
+          <div class="result__description_scheme">
+            <h2>
+              Варианты схемы перорального приема препарата Сермион<sup class="reg">&reg;</sup
+              ><sup>5</sup>:
+            </h2>
+            <div class="result__description_white">
+              <div class="result__description_wrap flexRowCenterSB">
+                <ul class="list list2">
+                  <li>
+                    <img src="./assets/images/icon_24hours.svg" alt="icon" />
+                    <p>
+                      Применение препарата 1&nbsp;раз/сутки может способствовать увеличению
+                      приверженности пациентов лечению&nbsp;<sup>8,10</sup>&nbsp;*
+                    </p>
+                  </li>
+                  <li>
+                    <img src="./assets/images/icon_clock.svg" alt="icon" />
+                    <p>
+                      Длительная терапия способствует улучшению когнитивных
+                      функций&nbsp;<sup>5&#8209;9</sup>&nbsp;*
+                    </p>
+                  </li>
+                </ul>
+                <div class="scheme">
+                  <img src="./assets/images/sermion_scheme1.svg" alt="scheme" />
+                </div>
+              </div>
+            </div>
+            <div class="result__description_borders">
+              <div class="result__description_border result__description_border1">
+                <p class="title">
+                  Сермион<sup class="reg">&reg;</sup>
+                  способствует<sup>5&#8209;8</sup>:
+                </p>
+                <ul class="list list1">
+                  <li>
+                    <p>
+                      <strong>улучшению реологии крови</strong> за&nbsp;счет снижения агрегации
+                      тромбоцитов
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>улучшению микроциркуляции</strong> за&nbsp;счет увеличения количества
+                      функционирующих капилляров
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>
+                        увеличению активности ацетилхолинергической, норадренергической
+                        и&nbsp;дофаминергической церебральных систем&nbsp;&rarr; содействует
+                        улучшению когнитивных процессов</strong
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h2>Показания к&nbsp;применению<sup>5</sup></h2>
+            <div class="result__description_borders">
+              <div class="result__description_box">
+                <p class="title">Симптоматическая терапия когнитивных нарушений,</p>
+                <p class="text">
+                  в&nbsp;том числе деменции, при хронических цереброваскулярных и&nbsp;органических
+                  поражениях головного мозга, сопровождающихся снижением памяти, концентрации
+                  внимания, мышления, активности, повышенной утомляемостью, эмоциональными
+                  расстройствами.
+                </p>
+              </div>
+              <div class="result__description_border result__description_border2">
+                <p class="text">
+                  <strong>Примечание:</strong> перед началом лечения ницерголином необходимо
+                  удостовериться, что данные симптомы не&nbsp;являются проявлением другого
+                  заболевания (как, например, внутренних болезней, психиатрических или
+                  неврологических заболеваний) и&nbsp;не&nbsp;требуют специфической терапии
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section forObserver" id="Result_Page_footer">
+        <div class="section__content result__footnotes">
+          <div class="footnote footnote-neurontin">
+            <div class="footnote__bottom">
+              <p class="footnote__text">Используемые источники информации:</p>
+              <ul class="footnote__list">
+                <li>
+                  1. Инструкция по&nbsp;медицинскому применению препарата Нейронтин<sup class="reg"
+                    >&reg;</sup
+                  >
+                  капсулы, рег.&nbsp;уд.&nbsp;П&nbsp;N013567/01, таблетки, покрытые пленочной
+                  оболочкой рег.&nbsp;уд.&nbsp;П&nbsp;N013567/02
+                </li>
+                <li>
+                  2. Давыдов&nbsp;О.С., Яхно&nbsp;Н.Н., Кукушкин&nbsp;М.Л. и&nbsp;соавт.
+                  Невропатическая боль: клинические рекомендации по&nbsp;диагностике и&nbsp;лечению
+                  Российского общества по&nbsp;изучению боли. Российский журнал боли.
+                  &#8470;&nbsp;4. 2018. 5&ndash;41.
+                </li>
+                <li>
+                  3. IMS Global Data [Электронный ресурс].&nbsp;&mdash; Режим доступа:
+                  https://www.imsglobal.org/ свободный&nbsp;&mdash; (22.07.2022).
+                </li>
+                <li>
+                  4. Аптека.ру [Электронный ресурс].&nbsp;&mdash; Режим доступа: https://apteka.ru
+                  свободный&nbsp;&mdash; (22.07.2022).
+                </li>
+                <li>
+                  5. Данилов&nbsp;Б., Шугурова&nbsp;И.М. Нейронтин&nbsp;&mdash; оригинальный
+                  препарат из&nbsp;группы габапентиноидов. Manage&nbsp;pain&nbsp;No1, 2021,
+                  стр&nbsp;1&ndash;7.
+                </li>
+                <li>
+                  6. PRAC PSUR AR&nbsp;&mdash; NAPs only EMA/PRAC/530852/2019&nbsp;&mdash;
+                  Внутренний документ компании Viatris, может быть предоставлен по&nbsp;запросу
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footnote footnote-thioctacid">
+            <div class="footnote__top">
+              <p class="footnote__text">
+                * Согласно консенсусу международных экспертов по&nbsp;лечению&nbsp;ДПН
+              </p>
+            </div>
+
+            <div class="footnote__middle">
+              <p class="footnote__text">Список сокращений:</p>
+              <p class="footnote__text">ДПН&nbsp;&mdash; диабетическая периферическая нейропатия</p>
+            </div>
+
+            <div class="footnote__bottom">
+              <p class="footnote__text">Используемые источники информации:</p>
+              <ul class="footnote__list">
+                <li>
+                  1. Лунева&nbsp;И.Е., Гришина&nbsp;Д.А., Супонева&nbsp;Н.А. Современные подходы
+                  к&nbsp;терапии диабетической полинейропатии. Эффективная
+                  фармакотерапия.&nbsp;2022; 18&nbsp;(10): 28&ndash;36.
+                </li>
+                <li>
+                  2. Инструкция по&nbsp;медицинскому применению препарата Тиоктацид<sup class="reg"
+                    >&reg;</sup
+                  >&nbsp;БВ таблетки рег&nbsp;уд.&nbsp;П&nbsp;N015545/01, Тиоктацид<sup class="reg"
+                    >&reg;</sup
+                  >&nbsp;600Т раствор для внутривенного введения рег&nbsp;уд.&nbsp;П&nbsp;N014923/01
+                </li>
+                <li>
+                  3. Архипов&nbsp;В.В., Городецкая&nbsp;Г.И., Журавлева&nbsp;М.В. и&nbsp;др. Влияние
+                  вспомогательных веществ на&nbsp;эффективность и&nbsp;безопасность препаратов
+                  тиоктовой кислоты. РМЖ. Медицинское обозрение.&nbsp;2016; 24(26):1788&mdash;1794.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footnote footnote-celebrex">
+            <div class="footnote__bottom">
+              <p class="footnote__text">Используемые источники информации:</p>
+              <ul class="footnote__list">
+                <li>
+                  1. Инструкция по&nbsp;медицинскому применению препарата Целебрекс<sup class="reg"
+                    >&reg;</sup
+                  >
+                  капсулы рег.&nbsp;уд.&nbsp;ЛП-002118 от&nbsp;03.07.2018, П&nbsp;N015986/01
+                  от&nbsp;28.04.2021,
+                  https://www.viatrisconnect.ru/ru-RU/Viatris-Medicine/Celebrex/Instructions-for-use?utm=123
+                </li>
+                <li>
+                  2. Birmingham&nbsp;B., Buvanendran&nbsp;A. Nonsteroidal Anti-inflammatory Drugs,
+                  Acetaminophen, and&nbsp;COX-2 Inhibitors&nbsp;/ Practical Management of&nbsp;Pain
+                  (Fifth Edition), 2014.
+                </li>
+                <li>
+                  3. Bruy&egrave;re&nbsp;O. et&nbsp;al. Обновленные рекомендации по&nbsp;алгоритму
+                  лечения остеоартрита коленного сустава Европейского общества по&nbsp;клиническим
+                  и&nbsp;экономическим аспектам остеопороза, остеоартрита и&nbsp;заболеваний
+                  костно-мышечной системы (ESCEO), Семинары по&nbsp;артриту и&nbsp;ревматизму
+                  2019&nbsp;г., стр.&nbsp;1&ndash;14.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footnote footnote-dona">
+            <div class="footnote__bottom">
+              <p class="footnote__text">Используемые источники информации:</p>
+              <ul class="footnote__list">
+                <li>
+                  1. Дыдыкина&nbsp;И.С., Денисов&nbsp;Л.Н., Коваленко&nbsp;П.С., Лила&nbsp;А.М.
+                  История открытия и&nbsp;многолетний опыт применения глюкозамина сульфата
+                  в&nbsp;клинической практике // Эффективная фармакотерапия.&nbsp;2020. Т.&nbsp;16.
+                  &#8470;&nbsp;16. С.&nbsp;26&ndash;34.
+                </li>
+                <li>
+                  2. Kucharz&nbsp;EJ, Kovalenko&nbsp;V, Sz&aacute;nt&oacute;&nbsp;S,
+                  Bruy&egrave;re&nbsp;O, Cooper&nbsp;C, Reginster&nbsp;JY. A&nbsp;review
+                  of&nbsp;glucosamine for knee osteoarthritis: why patented crystalline glucosamine
+                  sulfate should be&nbsp;differentiated from other glucosamines to&nbsp;maximize
+                  clinical outcomes. Curr Med Res Opin.&nbsp;2016&nbsp;Jun;
+                  32(6):&nbsp;997&ndash;1004.
+                </li>
+                <li>
+                  3. Инструкция по&nbsp;применению лекарственного препарата Дона<sup class="reg"
+                    >&reg;</sup
+                  >, раствор для внутримышечного введения, таблетки, порошок для приготовления
+                  раствора для приема внутрь, регистрационное удостоверение П&nbsp;N013737/01
+                  от&nbsp;30.03.2017, ЛП-001932 от&nbsp;18.06.2020, П&nbsp;N013659/01
+                  от&nbsp;27.05.2020,
+                  https://www.viatrisconnect.ru/ru-RU/Viatris-Medicine/Dona/Instructions-for-use?utm=123
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footnote footnote-sermion">
+            <div class="footnote__top">
+              <p class="footnote__text">
+                * В&nbsp;случае применения препарата Сермион<sup class="reg">&reg;</sup>
+                в&nbsp;соответствии с&nbsp;инструкцией по&nbsp;медицинскому применению
+                П&nbsp;N012181/01&nbsp;в дозе 30&nbsp;мг в&nbsp;сутки однократно
+                и&nbsp;с&nbsp;учетом результатов систематического обзора и&nbsp;метаанализа
+                (Coleman&nbsp;C.&nbsp;I. et&nbsp;al.&nbsp;2012), где было показано, что
+                приверженность лечению повышается с&nbsp;уменьшением кратности приема в&nbsp;день.
+              </p>
+              <p class="footnote__text">
+                ** При условии правильного применения препарата, при этом врач должен периодически,
+                по&nbsp;крайней мере каждые 6&nbsp;месяцев, оценивать эффект лечения
+                и&nbsp;целесообразность его продолжения.
+              </p>
+            </div>
+            <div class="footnote__bottom">
+              <p class="footnote__text">Используемые источники информации:</p>
+              <ul class="footnote__list">
+                <li>
+                  1. Winblad&nbsp;B, Fioravanti&nbsp;M, Dolezal&nbsp;T, Logina&nbsp;I,
+                  Milanov&nbsp;IG, Popescu&nbsp;DC, Solomon&nbsp;A. Therapeutic use
+                  of&nbsp;nicergoline. Clin Drug Investig.&nbsp;2008; 28(9):533-52.
+                  doi:&nbsp;10.2165/00044011-200828090-00001
+                </li>
+                <li>
+                  2. Winblad,&nbsp;B., Carfagna,&nbsp;N., &amp;&nbsp;Bonura,&nbsp;L. (2001).
+                  Nicergoline in&nbsp;dementia: a&nbsp;review of&nbsp;its pharmacological properties
+                  and therapeutic potential (vol&nbsp;14, pg&nbsp;267, 2000). CNS&nbsp;DRUGS, 15(1),
+                  58&ndash;58.
+                </li>
+                <li>
+                  3. Carfagna,&nbsp;N., Di&nbsp;Clemente,&nbsp;A., Cavanus,&nbsp;S.,
+                  Damiani,&nbsp;D., Gerna,&nbsp;M., Salmoiraghi,&nbsp;P., ...
+                  &amp;&nbsp;Post,&nbsp;C. (1995). Modulation of&nbsp;hippocampal ACh release
+                  by&nbsp;chronic nicergoline treatment in&nbsp;freely moving young and aged rats.
+                  Neuroscience letters, 197(3), 195&ndash;198.
+                </li>
+                <li>
+                  4. Proof of&nbsp;Therapeutical Effectiveness of&nbsp;Nootropic and Vasoactive
+                  Drugs. Advances in&nbsp;Clinical and Experimental Nicergoline Research. 1985th
+                  edition.&nbsp;by&nbsp;Heinz Heidrich (Editor). Springer.&nbsp;269&nbsp;pp
+                </li>
+                <li>
+                  5. Инструкция по&nbsp;медицинскому применению препарата Сермион<sup class="reg"
+                    >&reg;</sup
+                  >
+                  лиофилизат рег.&nbsp;уд.&nbsp;РУ&nbsp;N011253/02, таблетки 5, 10&nbsp;мг
+                  рег.&nbsp;уд.&nbsp;РУ&nbsp;N011253/01, таблетки по&nbsp;30&nbsp;мг
+                  рег.&nbsp;уд.&nbsp;Руп&nbsp;N012181/01 от&nbsp;20.07.2021. <br /><a
+                    href="https://www.viatrisconnect-ru.com/ru-RU/Viatris-Medicine/Sermion/Instructions-for-use?utm=123"
+                    target="_blank"
+                    >https://www.viatrisconnect-ru.com/ru-RU/Viatris-Medicine/Sermion/Instructions-for-use?utm=123</a
+                  >
+                </li>
+                <li>
+                  6. Захаров&nbsp;Д.В., Михайлов&nbsp;В.А. Проблемы церебральной микроциркуляции как
+                  терапевтическая мишень. Обозрение психиатрии и&nbsp;медицинской психологии имени
+                  В.М.&nbsp;Бехтерева 3&nbsp;(2016): 103&ndash;108
+                </li>
+                <li>
+                  7. Philippon&nbsp;B., Thivolle&nbsp;P., Berger&nbsp;M. Nicergoline and steal
+                  effect in&nbsp;favor of&nbsp;zones of&nbsp;hypoperfusion in&nbsp;cerebral ischemic
+                  accidents, 1982; 12(4):&nbsp;361&ndash;6.
+                </li>
+                <li>
+                  8.Кузнецов&nbsp;А.А., Кабакова&nbsp;Т.И., Кузнецов&nbsp;А.В. Лекарственная форма
+                  и&nbsp;ее&nbsp;потребительные свойства как дополнительный фактор лекарственной
+                  комплаентности. Современные проблемы науки и&nbsp;образования. 2012(5): 356-356.
+                </li>
+                <li>
+                  9. Свищенко&nbsp;Е.П., Безродная&nbsp;Л.В., Гулкевич&nbsp;О.В. Высокие дозы
+                  СЕРМИОНА&nbsp;&mdash; новый подход к&nbsp;лечению больных
+                  с&nbsp;цереброваскулярной патологией. Крымский терапевтический журнал, 1999 (4),
+                  С.&nbsp;1&ndash;9.
+                </li>
+                <li>
+                  10. Coleman&nbsp;C.&nbsp;I. et&nbsp;al. Dosing frequency and medication adherence
+                  in&nbsp;chronic disease //Journal of&nbsp;Managed Care Pharmacy.&nbsp;&mdash;
+                  2012.&nbsp;&mdash; Т.&nbsp;18.&nbsp;&mdash;&nbsp;&#8470;.&nbsp;7.&nbsp;&mdash;
+                  С.&nbsp;527-539.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="discl-result">
+            <p>
+              Материал предназначен для&nbsp;специалисов здравоохранения
+              <br />Реклама
+            </p>
+          </div>
+          <div class="footer">
+            <div class="footer__logo">
+              <img src="./assets/images/logo.svg" alt="logo" />
+            </div>
+            <div class="footer__text footer__text1">
+              <p>ООО&nbsp;&laquo;Виатрис&raquo;</p>
+              <p>
+                125315, г.&nbsp;Москва, пр-кт&nbsp;Ленинградский, д.&nbsp;72, к.&nbsp;4,
+                этаж&nbsp;2, помещ./ком.&nbsp;9/1.
+              </p>
+              <a href="tel:+74951300550">Тел.:&nbsp;+&nbsp;7&nbsp;(495)&nbsp;130-0550.</a>
+            </div>
+            <div class="footer__text footer__text2">
+              <p>ООО&nbsp;&laquo;Майлан Фарма&raquo;</p>
+              <p>125315, г.&nbsp;Москва, пр-кт&nbsp;Ленинградский, д.&nbsp;72, к.&nbsp;4.</p>
+              <a href="tel:+74951300550">Тел.:&nbsp;+&nbsp;7&nbsp;(495)&nbsp;130-0550.</a>
+            </div>
+            <div class="footer__text footer__text3 regNumber regNumber-neurontin">
+              <p>NEUR-2022-0233&nbsp;22.07.2022</p>
+            </div>
+            <div class="footer__text footer__text3 regNumber regNumber-thioctacid">
+              <p>NEUR-2022-0233&nbsp;22.07.2022</p>
+            </div>
+            <div class="footer__text footer__text3 regNumber regNumber-celebrex">
+              <p>CELE-2022-1241&nbsp;25.07.2022</p>
+            </div>
+            <div class="footer__text footer__text3 regNumber regNumber-dona">
+              <p>CELE-2022-1241&nbsp;25.07.2022</p>
+            </div>
+            <div class="footer__text footer__text3 regNumber regNumber-sermion">
+              <p>SERM-2022-0254&nbsp;01.12.2022</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="bottomFix" style="opacity: 0"></div>  -->
+      </section>
+
+      <div class="hidden">
+        <div id="scale1">
+          <div class="mob-scroll">
+            <img src="./assets/images/neurontin_scale1.svg" alt="scale1" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

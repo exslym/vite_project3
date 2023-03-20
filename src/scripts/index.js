@@ -1,18 +1,42 @@
 import '../styles/index.scss';
+import { main } from './main/main';
+import menuBurger from './main/menuBurger';
+import mobileZoom from './main/mobileZoom';
+import modals from './main/modals';
+import resultPage from './main/resultPage';
+import { nextQuestion, testEndButton, testStartButton } from './portfolioTests/testOptions';
+import { firstTestBlock, portfolioTests } from './portfolioTests/tests';
 
-import { elementAnimation } from './extra/animations';
-import { popup } from './extra/popup';
-import { smoothShowBlock } from './extra/showBlock';
-
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
-  /* SHOW/HIDE BLOCK */
-  smoothShowBlock('openButton', 'openBlock', '_active');
+  // MAIN (START PAGE, MENU LINKS):
+  main();
 
-  /* ZOOM for PLUS buttons on mobile devices */
-  popup('popup');
+  // MENU-BURGER:
+  menuBurger();
 
-  /*  ANIMATIONS */
-  elementAnimation('appearingBlock', '_animated2');
+  // MODALS:
+  modals();
+
+  // ZOOM IMAGES IN MOBILE DEVICES:
+  mobileZoom();
+
+  // START TEST BUTTON:
+  testStartButton();
+
+  // START FIRST TEST BLOCK:
+  firstTestBlock();
+
+  // NEXT QUESTION BUTTON:
+  nextQuestion();
+
+  // END TEST BUTTON:
+  testEndButton();
+
+  // RESULT PAGE:
+  resultPage();
+
+  // TESTS:
+  portfolioTests();
 });
