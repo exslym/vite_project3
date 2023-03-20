@@ -37,11 +37,15 @@ This adds gh-pages branch to your project github repository, deploys built proje
 - `Linting` support via **eslint**
 - `Formatter` support via **prettier**
 - `Autoprefix` support via **postcss**
-- `Image Optimization` support via **image-minimizer-webpack-plugin** & **svgo**
+- `Image Optimization` support via **vite-plugin-image-optimizer**
 
 ### When you run `npm run build`:
 
-- All image files (svg, png, jpg/jpeg, webp) gets compressed with lossless quality
-  <br />via [image-minimizer-webpack-plugin](https://github.com/webpack-contrib/image-minimizer-webpack-plugin).
+- All image files (svg, png, jpg/jpeg, tiff, gif, webp, avif) gets compressed with lossless quality
+  <br />via [vite-plugin-image-optimizer](https://github.com/FatehAK/vite-plugin-image-optimizer).
 
-Place all external connected files (jQuery and others) in ./tools and provide them path in html file.
+Place all external connected js files (e.g. jQuery and others) in `./public/tools` and provide them path in each \*.html page file (like this: `<script src="tools/jquery-3.6.3.min.js"></script>`).
+
+Place all external connected css files (e.g. normalize.min.css and others) in `./src/assets/tools` and provide them path in index.scss file (like this: `@import url('../assets/tools/normalize.min.css');`).
+
+Place media files that you use as backgrounds in styles properties in `./src/styles/assets/images` and provide them path in \_main.scss file (like this: `url('./assets/images/bg_main.png')`).
