@@ -19,7 +19,7 @@ npm run build
 ### Preview Build Production Version
 
 ```
-npm serve
+npm run serve
 ```
 
 ### Deployment on GitHub Pages (Optional)
